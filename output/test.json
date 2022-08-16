@@ -1,0 +1,18 @@
+[
+  {
+    "wevaluate_option_1000": 0,
+    "wevaluate_option_1001": 0.25,
+    "wevaluate_option_1002": 0,
+    "etm_scenario": "high_demand",
+    "etm_kpi_one": 300,
+    "etm_kpi_two": 123456789
+  },
+  {
+    "wevaluate_option_1000": 0,
+    "wevaluate_option_1001": 0.5,
+    "wevaluate_option_1002": 0,
+    "etm_scenario": "high_demand",
+    "etm_kpi_1": 310,
+    "etm_kpi_2": 123456999
+  }
+]

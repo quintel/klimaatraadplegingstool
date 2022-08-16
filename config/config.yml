@@ -1,0 +1,15 @@
+# Common settings for the tool
+
+etengine_url: localhost:3001/api/v3
+
+scenarios:
+  - key: high_demand
+    id: 123345
+  - key: medium_demand
+    id: 678689
+  - key: low_demand
+    id: 812093
+
+kpis:
+  - key: costs_KPI
+    gquery: total_costs

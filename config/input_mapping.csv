@@ -1,0 +1,11 @@
+KR_input_key,KR_input_value,slider_0_name,slider_0_value,slider_1_name,slider_1_value,slider_2_name,slider_2_value,slider_3_name,slider_3_value
+KR_biomass_key,0,biomass_input_one,1,biomass_input_two,1,biomass_input_three,2,biomass_input_four,0.5
+KR_biomass_key,0.25,biomass_input_one,2,biomass_input_two,1,biomass_input_three,2,biomass_input_four,0.6
+KR_biomass_key,0.5,biomass_input_one,3,biomass_input_two,1,biomass_input_three,2,biomass_input_four,0.7
+KR_biomass_key,0.75,biomass_input_one,4,biomass_input_two,1,biomass_input_three,2,biomass_input_four,0.8
+KR_biomass_key,1,biomass_input_one,5,biomass_input_two,1,biomass_input_three,2,biomass_input_four,0.9
+KR_nuclear_key,0,nuclear_input_one,1,nuclear_input_two,1,nuclear_input_three,2,nuclear_input_four,0.5
+KR_nuclear_key,0.25,nuclear_input_one,2,nuclear_input_two,1,nuclear_input_three,2,nuclear_input_four,0.6
+KR_nuclear_key,0.5,nuclear_input_one,3,nuclear_input_two,1,nuclear_input_three,2,nuclear_input_four,0.7
+KR_nuclear_key,0.75,nuclear_input_one,4,nuclear_input_two,1,nuclear_input_three,2,nuclear_input_four,0.8
+KR_nuclear_key,1,nuclear_input_one,5,nuclear_input_two,1,nuclear_input_three,2,nuclear_input_four,0.9
