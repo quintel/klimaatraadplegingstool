@@ -10,9 +10,15 @@ class CombinedSetting:
         self.kr_setting = kr_setting
         self.etm_setting = etm_setting
         self.kpis = {key['gquery']: {'key': key['key'], 'value': None} for key in kpi_settings}
+        self.etm_scenario_id = None
 
-    def to_json(self):
-        '''Make sure the KPI results are not None!'''
+    def as_json(self):
+        '''Returns a dict that can be dumped by json'''
+        return (
+            self.kr_setting |
+            {'etm_scenario': self.etm_scenario_name} |
+            {val['key']: val['value'] for val in self.kpis.values()}
+        )
 
     def as_request(self):
         # This will change as we'll do two requests :)
@@ -20,7 +26,7 @@ class CombinedSetting:
             "scenario": {
                 "user_values": self.etm_setting
             },
-            "gqueries": self.kpis.keys()
+            "gqueries": list(self.kpis.keys())
         }
 
     def update_kpis(self, result):

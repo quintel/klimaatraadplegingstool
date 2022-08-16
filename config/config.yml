@@ -2,13 +2,9 @@
 
 etengine_url: localhost:3001/api/v3
 
-scenarios:
-  - key: high_demand
-    id: 123345
-  - key: medium_demand
-    id: 678689
-  - key: low_demand
-    id: 812093
+basic_scenario:
+  end_year: 2050
+  area_code: nl
 
 kpis:
   - key: costs_KPI
