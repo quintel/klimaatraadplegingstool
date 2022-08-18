@@ -11,7 +11,7 @@ def test_generate_settings(input_mapping, basic_scenario, supply_and_savings):
 
     a_setting = next(gen)
     assert isinstance(a_setting, CombinedSetting)
-    assert 'total_costs' in a_setting.kpis
+    assert 'costs_KPI' in a_setting.etm_scenario.kpis
 
     # Update this test
     assert len(a_setting.as_request()['scenario']['user_values']) > 4

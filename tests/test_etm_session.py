@@ -33,11 +33,11 @@ def test_calculate_kpis(setting, requests_mock):
     )
 
 
-    assert not setting.etm_scenario_id
-    assert not setting.kpis['total_costs']['value']
+    assert not setting.etm_scenario.id
+    assert not setting.etm_scenario.kpis['costs_kpi']
 
     session = ETMSession()
     session.calculate_kpis(setting)
 
-    assert setting.kpis['total_costs']['value'] == 1
-    assert setting.etm_scenario_id == 12345
+    assert setting.etm_scenario.kpis['costs_kpi'] == 1
+    assert setting.etm_scenario.id == 12345

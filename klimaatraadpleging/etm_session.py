@@ -10,10 +10,10 @@ class ETMSession():
     def calculate_kpis(self, setting: CombinedSetting):
         url = Config().etengine_url + '/scenarios/'
 
-        if not setting.etm_scenario_id:
+        if not setting.etm_scenario.id:
             self._create_scenario(setting)
 
-        url = f'{url}{setting.etm_scenario_id}'
+        url = f'{url}{setting.etm_scenario.id}'
         self._update_kpis(
             setting,
             self._handle_response(requests.put(url, json=setting.as_request(with_queries=True)))
@@ -40,8 +40,7 @@ class ETMSession():
         )
 
     def _update_scenario_id(self, setting: CombinedSetting, data: dict):
-        print(data)
-        setting.etm_scenario_id = data['id']
+        setting.etm_scenario.id = data['id']
 
     def _update_kpis(self, setting, new_content):
         '''Updates the scenario ID and the KPI's'''
