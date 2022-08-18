@@ -1,6 +1,6 @@
 # Common settings for the tool
 
-etengine_url: localhost:3001/api/v3
+etengine_url: http://localhost:3001/api/v3
 
 basic_scenario:
   end_year: 2050

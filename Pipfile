@@ -17,3 +17,4 @@ python_version = "3.9"
 
 [scripts]
 tests = "python -m pytest"
+generate_results = "python scripts/generate_outcomes.py"

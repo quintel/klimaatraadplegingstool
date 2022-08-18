@@ -17,15 +17,18 @@ def setting():
 def test_calculate_kpis(setting, requests_mock):
 
     requests_mock.put(
-        f'{Config().etengine_url}/scenarios/',
+        f'{Config().etengine_url}/scenarios/12345',
         json={
-            'scenario': {
-                'id': 12345
-            },
             'gqueries': {
                 'total_costs': {'future': 1, 'present': 0.5}
             }
         },
+        status_code=200
+    )
+
+    requests_mock.post(
+        f'{Config().etengine_url}/scenarios/',
+        json={'id': 12345},
         status_code=200
     )
 

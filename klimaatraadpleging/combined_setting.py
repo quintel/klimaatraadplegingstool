@@ -20,14 +20,12 @@ class CombinedSetting:
             {val['key']: val['value'] for val in self.kpis.values()}
         )
 
-    def as_request(self):
-        # This will change as we'll do two requests :)
-        return {
-            "scenario": {
-                "user_values": self.etm_setting
-            },
-            "gqueries": list(self.kpis.keys())
-        }
+    def as_request(self, with_queries=False):
+        # This will change as we'll do two gquery requests :)
+        if with_queries:
+            return self._user_values_for_request() | self._gqueries_for_request()
+
+        return self._user_values_for_request()
 
     def update_kpis(self, result):
         '''Update the KPI dict'''
@@ -41,3 +39,9 @@ class CombinedSetting:
 
         self.kr_setting[kr_key] = kr_value
         self.etm_setting.update(etm_settings)
+
+    def _user_values_for_request(self):
+        return {"scenario": {"user_values": self.etm_setting}}
+
+    def _gqueries_for_request(self):
+        return {"gqueries": list(self.kpis.keys())}
