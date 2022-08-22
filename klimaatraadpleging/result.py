@@ -8,7 +8,13 @@ class Result():
 
     def calculate(self):
         for setting in self.combiner.generate_settings():
-            self.etm_session.calculate_kpis(setting)
+            # We have three iterations of requests to ETE:
+            # 1. create scenario
+            # 2. queries for demand_installer
+            # 3. update user values with installed demand + get KPI's
+            for i in range(3):
+                self.etm_session.calculate(setting, iteration=i)
+
             self.result.append(setting.as_json())
 
     def write_to(self, path):

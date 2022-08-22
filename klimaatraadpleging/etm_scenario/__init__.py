@@ -1,13 +1,14 @@
-from .heat_demand import HeatDemand
+from .install_demand import InstallDemand
 from .kpis import KPIS
 
 
-class ETMScenario(KPIS, HeatDemand):
+class ETMScenario(KPIS, InstallDemand):
     def __init__(self, name, user_values, kpis):
         self.name = name
         self.id = None
         self.user_values = user_values
         self.kpis = kpis
+        self.installer = 'new'
 
     def as_json(self):
         '''Returns a dict that can be dumped by json'''

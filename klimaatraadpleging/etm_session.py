@@ -7,16 +7,15 @@ class ETMSession():
     def __init__(self):
         pass
 
-    def calculate_kpis(self, setting: CombinedSetting):
-        url = Config().etengine_url + '/scenarios/'
-
-        if not setting.etm_scenario.id:
+    def calculate(self, setting: CombinedSetting, iteration=0):
+        if iteration == 0:
             self._create_scenario(setting)
 
-        url = f'{url}{setting.etm_scenario.id}'
-        self._update_kpis(
+        url = f'{Config().etengine_url}/scenarios/{setting.etm_scenario.id}'
+        self._update_setting(
             setting,
-            self._handle_response(requests.put(url, json=setting.as_request(with_queries=True)))
+            self._handle_response(requests.put(url, json=setting.as_request(iteration))),
+            iteration
         )
 
     def _handle_response(self, response):
@@ -42,9 +41,8 @@ class ETMSession():
     def _update_scenario_id(self, setting: CombinedSetting, data: dict):
         setting.etm_scenario.id = data['id']
 
-    def _update_kpis(self, setting, new_content):
-        '''Updates the scenario ID and the KPI's'''
-        setting.update_kpis(new_content['gqueries'])
+    def _update_setting(self, setting: CombinedSetting, result, iteration=1):
+        setting.update(result['gqueries'], iteration)
 
 
 class ETMConnectionError(Exception):

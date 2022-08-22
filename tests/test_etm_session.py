@@ -15,6 +15,7 @@ def setting():
     )
 
 def test_calculate_kpis(setting, requests_mock):
+    setting.etm_scenario.id = 12345
 
     requests_mock.put(
         f'{Config().etengine_url}/scenarios/12345',
@@ -32,12 +33,10 @@ def test_calculate_kpis(setting, requests_mock):
         status_code=200
     )
 
-
-    assert not setting.etm_scenario.id
     assert not setting.etm_scenario.kpis['costs_kpi']
 
     session = ETMSession()
-    session.calculate_kpis(setting)
+    session.calculate(setting, iteration=2)
 
     assert setting.etm_scenario.kpis['costs_kpi'] == 1
     assert setting.etm_scenario.id == 12345

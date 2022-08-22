@@ -7,6 +7,7 @@ from klimaatraadpleging.config import Config
 from klimaatraadpleging.basic_scenarios import BasicScenarios
 from klimaatraadpleging.etm_session import ETMSession
 from klimaatraadpleging.result import Result
+from klimaatraadpleging.demand_installer import DemandInstaller
 
 
 @pytest.fixture
@@ -15,14 +16,21 @@ def combiner(input_mapping, basic_scenario, supply_and_savings):
     return Combiner(input_mapping, [{'key': 'costs_KPI', 'gquery': 'total_costs'}], bs)
 
 
+def mocked_response(request, _):
+    print(request.text)
+    if "scenario" in request.text:
+        return {'gqueries': {
+                    'total_costs': {'future': 1, 'present': 0.5}
+                }}
+
+    return {'gqueries':
+        {query: {'future': 1, 'present': 0.5} for query in DemandInstaller().supply_queries()}
+    }
+
 def test_calculate(combiner, requests_mock):
     requests_mock.put(
         f'{Config().etengine_url}/scenarios/12345',
-        json={
-            'gqueries': {
-                'total_costs': {'future': 1, 'present': 0.5}
-            }
-        },
+        json=mocked_response,
         status_code=200
     )
 

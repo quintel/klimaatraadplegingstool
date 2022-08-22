@@ -18,15 +18,19 @@ class CombinedSetting:
             self.etm_scenario.as_json()
         )
 
-    def as_request(self, with_queries=False):
-        # This will change as we'll do two gquery requests -> specify which queries you want
-        if with_queries:
-            return self.etm_scenario.scenario_object() | self.etm_scenario.kpi_queries()
+    def as_request(self, iteration=0):
+        if iteration == 0:
+            return self.etm_scenario.scenario_object()
+        if iteration == 1:
+            return self.etm_scenario.installer_queries()
+        if iteration == 2:
+            return self.etm_scenario.installer_user_values() | self.etm_scenario.kpi_queries()
 
-        return self.etm_scenario.scenario_object()
-
-    def update_kpis(self, result):
-        self.etm_scenario.update_kpis(result)
+    def update(self, result, iteration=1):
+        if iteration == 1:
+            self.etm_scenario.update_installer(result)
+        if iteration == 2:
+            self.etm_scenario.update_kpis(result)
 
     def add_setting(self, kr_key, kr_value, etm_settings):
         '''Add the settings for one klimaatraadpleging input to all settings'''
