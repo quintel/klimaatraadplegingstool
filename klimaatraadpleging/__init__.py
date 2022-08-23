@@ -9,11 +9,11 @@ from klimaatraadpleging.combiner import Combiner
 def generate_json():
     result = Result(
         Combiner(
-            pd.read_csv('config/input_mapping.csv', index_col=[0,1]),
+            pd.read_csv('config/input_mapping.csv', index_col=[0,1], comment='#'),
             [{'key': 'costs_KPI', 'gquery': 'total_costs'}], # Replace this with KPI config
             BasicScenarios(
-                pd.read_csv('config/basic_scenarios.csv', index_col=0),
-                pd.read_csv('config/supply_and_savings.csv', index_col=0)
+                pd.read_csv('config/basic_scenarios.csv', index_col=0, comment='#'),
+                pd.read_csv('config/supply_and_savings.csv', index_col=0, comment='#')
             )
         ),
         ETMSession()
