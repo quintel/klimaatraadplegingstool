@@ -1,11 +1,11 @@
 # Common settings for the tool
 
-etengine_url: http://localhost:3001/api/v3
+etengine_url: https://engine.energytransitionmodel.com/api/v3
 
 basic_scenario:
   end_year: 2050
   area_code: nl
 
 kpis:
-  - key: costs_KPI
-    gquery: total_costs
+  - key: primary
+    gquery: dashboard_energy_demand_primary_of_final

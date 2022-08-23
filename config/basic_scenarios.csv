@@ -1,3 +1,30 @@
 input,high_demand,medium_demand,low_demand
-slider_one,100,50,0#comment one
-slider_two,0.5,0.75,1#comment two
+households_number_of_inhabitants,21.5,17.3,17.1#CBS_In_2050_zijn_er_twee_tot_drie_keer_zoveel_80-plussers_als_nu
+households_number_of_residences,10336538,8317307,8221153#PBL/CBS_Regionale_bevolkings-_en_huishoudens_prognose_2050
+households_useful_demand_hot_water_share,0.3,0,-0.3#10%_groei/geen_groei/10%_krimp
+households_useful_demand_electric_appliances,0.3,0,-0.3
+households_useful_demand_lighting,0.3,0,-0.3
+households_useful_demand_cooking_per_person,0.3,0,-0.3
+households_useful_demand_heat_per_person,0.3,0,-0.3
+households_useful_demand_for_cooling,0.3,0,-0.3
+number_of_buildings,0.3,0,-0.3
+buildings_useful_demand_electricity,0.3,0,-0.3
+buildings_useful_demand_for_space_heating,0.3,0,-0.3
+buildings_useful_demand_cooling,0.3,0,-0.3
+transport_useful_demand_passenger_kms,0.3,0,-0.3
+transport_useful_demand_freight_tonne_kms,0.3,0,-0.3
+industry_steel_production,110,100,90
+industry_aluminium_production,110,100,90
+industry_other_metals_production,110,100,90
+industry_useful_demand_for_chemical_refineries,110,100,90
+industry_useful_demand_for_chemical_fertilizers,110,100,90
+industry_useful_demand_for_chemical_other,110,100,90
+industry_useful_demand_for_other_ict,110,100,90
+industry_useful_demand_for_other_food,110,100,90
+industry_useful_demand_for_other_paper,110,100,90
+industry_useful_demand_for_aggregated_other,110,100,90
+agriculture_useful_demand_electricity,0.3,0,-0.3
+agriculture_useful_demand_useable_heat,0.3,0,-0.3
+other_useful_demand_electricity,0.3,0,-0.3
+other_useful_demand_useable_heat,0.3,0,-0.3
+other_useful_demand_non_energetic,0.3,0,-0.3
