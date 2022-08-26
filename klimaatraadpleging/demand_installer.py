@@ -4,10 +4,7 @@ class DemandInstaller():
     #  @Joris, fill in the supply queries here after the keywords of your choice.
     # You can add as many supply queries as you like, with as many custom keywords
     QUERIES = {
-        'heat': 'total_heat_supply',
-        'hydrogen': 'total_hydrogen_supply',
-        'biomass': 'total_biomass_supply',
-        'electricity': 'total_electricity_supply'
+        'heat_supply': 'co2_sheet_total_final_energy_demand'
     }
 
     def __init__(self) -> None:
@@ -31,15 +28,15 @@ class DemandInstaller():
         '''
         # You can use the keywords for the queries you defined on line 6 in the
         # following way:
-        if self.supply.heat > 300:
-            self.sliders['my_slider_name_one'] = 100
-            self.sliders['my_slider_name_two'] = 200
+        #if self.supply.heat_supply.value > 100:
+        #    self.sliders['buildings_space_heater_district_heating_steam_hot_water_share'] = 
+        #    self.sliders['households_heater_district_heating_steam_hot_water_share'] = 50
             # The sliders are defaulting to 0, so you can use += directly without checking first
-            self.sliders['my_slider_name_three'] += 1
+        #    self.sliders['my_slider_name_three'] += 1
 
         # Or you can use the 'any' keyword to safely check if the value is bigger than 0
-        if self.supply.hydrogen.any():
-            self.sliders['hydrogen_based_heatpump'] = 100
+        #if self.supply.hydrogen.any():
+        #    self.sliders['households_insulation_level_apartments'] = 35
 
         # DO NOT FORGET: share groups need to be balanced by you. ETEngine is not going to
         # do it for you and will complain.
