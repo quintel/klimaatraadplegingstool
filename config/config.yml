@@ -1,11 +1,15 @@
 # Common settings for the tool
 
-etengine_url: https://engine.energytransitionmodel.com/api/v3
+etengine_url: https://beta-engine.energytransitionmodel.com/api/v3
 
 basic_scenario:
   end_year: 2050
   area_code: nl
 
 kpis:
-  - key: primary
-    gquery: dashboard_energy_demand_primary_of_final
+  - key: co2
+    gquery: dashboard_reduction_of_co2_emissions_versus_1990
+  - key: import_dependency
+    gquery: dashboard_energy_import_netto
+  - key: costs
+    gquery: dashboard_total_costs
