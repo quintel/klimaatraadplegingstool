@@ -80,25 +80,50 @@ class Query():
         return repr(self.value)
 
     def __lt__(self, other):
-        '''Abusing this for 'other' ints'''
-        return self.value < other
+        return self.value < self._value_for(other)
 
     def __le__(self, other):
-        '''Abusing this for 'other' ints'''
-        return self.value <= other
+        return self.value <= self._value_for(other)
 
     def __eq__(self, other):
-        '''Abusing this for 'other' ints'''
-        return self.value == other
+        return self.value == self._value_for(other)
 
     def __ne__(self, other):
-        '''Abusing this for 'other' ints'''
-        return self.value != other
+        return self.value != self._value_for(other)
 
     def __gt__(self, other):
-        '''Abusing this for 'other' ints'''
-        return self.value > other
+        return self.value > self._value_for(other)
 
     def __ge__(self, other):
-        '''Abusing this for 'other' ints'''
-        return self.value >= other
+        return self.value >= self._value_for(other)
+
+    def __mul__(self, other):
+        return self.value * self._value_for(other)
+
+    def __rmul__(self, other):
+        return self.value * self._value_for(other)
+
+    def __div__(self, other):
+        return self.value / self._value_for(other)
+
+    def __rdiv__(self, other):
+        return self._value_for(other) / self.value
+
+    def __add__(self, other):
+        return self.value + self._value_for(other)
+
+    def __radd__(self, other):
+        return self.value + self._value_for(other)
+
+    def __sub__(self, other):
+        return self.value - self._value_for(other)
+
+    def __rsub__(self, other):
+        return self._value_for(other) - self.value
+
+    def _value_for(self, other):
+        '''Check if other is a Query of a float/int, return the value'''
+        try:
+            return other.value
+        except AttributeError:
+            return other
