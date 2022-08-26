@@ -1,6 +1,7 @@
 '''Combines settings into a request'''
 
 import itertools
+import numpy as np
 from .combined_setting import CombinedSetting
 
 class Combiner:
@@ -38,14 +39,14 @@ class Combiner:
         return possibilities
 
     def _handle_etm_settings(self, kr_key, kr_value):
-        thing = self.input_mapping.loc[kr_key, kr_value].to_dict()
+        thing = self.input_mapping.loc[kr_key, kr_value].dropna().to_dict()
 
         # TODO: use multi index? instead of this ugly thing
 
         as_a_dict = {}
 
         for i in range(int(len(thing.keys()) / 2)):
-            if thing[f'slider_{i}_name']:
+            if f'slider_{i}_name' in thing:
                 as_a_dict[thing[f'slider_{i}_name']] = thing[f'slider_{i}_value']
 
         return as_a_dict
