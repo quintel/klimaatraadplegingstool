@@ -4,7 +4,8 @@ class DemandInstaller():
     #  @Joris, fill in the supply queries here after the keywords of your choice.
     # You can add as many supply queries as you like, with as many custom keywords
     QUERIES = {
-        'heat_supply': 'co2_sheet_total_final_energy_demand'
+        'heat': 'co2_sheet_total_final_energy_demand',
+        # 'hydrogen': 'gquery_key',
     }
 
     def __init__(self) -> None:
@@ -26,16 +27,32 @@ class DemandInstaller():
         Assumes the queries for supply are done already.
         @Joris, here you can add your if else statments
         '''
+        # Some commented examples:
         # You can use the keywords for the queries you defined on line 6 in the
         # following way:
-        #if self.supply.heat_supply.value > 100:
-        #    self.sliders['buildings_space_heater_district_heating_steam_hot_water_share'] = 
-        #    self.sliders['households_heater_district_heating_steam_hot_water_share'] = 50
-            # The sliders are defaulting to 0, so you can use += directly without checking first
-        #    self.sliders['my_slider_name_three'] += 1
+        # if self.supply.heat > 100:
+        #     self.sliders['buildings_space_heater_district_heating_steam_hot_water_share'] = self.supply.heat / 3
+        #     self.sliders['households_heater_district_heating_steam_hot_water_share'] = self.supply.heat / 3
+        #     # The sliders are defaulting to 0, so you can use += directly without checking first
+        #     self.sliders['my_slider_name_three'] = self.supply.heat / 3
 
-        # Or you can use the 'any' keyword to safely check if the value is bigger than 0
-        #if self.supply.hydrogen.any():
+        #     # Met een loopje - volgordelijk
+        #     options = ['slider_1', 'slider_2', 'slider_3']
+        #     heat_left = self.supply.heat
+        #     for option in options:
+        #         if not heat_left: break
+
+        #         slider_setting = 10
+
+        #         self.sliders[option] = slider_setting
+        #         heat_left -= slider_setting
+
+
+        # elif self.supply.heat > 50:
+        #     self.sliders['buildings_space_heater_district_heating_steam_hot_water_share'] = 0.5
+
+        # # Or you can use the 'any' keyword to safely check if the value is bigger than 0
+        # if self.supply.hydrogen.any():
         #    self.sliders['households_insulation_level_apartments'] = 35
 
         # DO NOT FORGET: share groups need to be balanced by you. ETEngine is not going to
