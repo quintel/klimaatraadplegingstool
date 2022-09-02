@@ -1,7 +1,7 @@
 # Common settings for the tool
 
+#etengine_url: http://localhost:3000/api/v3
 etengine_url: https://beta-engine.energytransitionmodel.com/api/v3
-
 basic_scenario:
   end_year: 2050
   area_code: nl
@@ -13,3 +13,9 @@ kpis:
     gquery: dashboard_energy_import_netto
   - key: costs
     gquery: dashboard_total_costs
+  - key: unused_heat
+    gquery: energy_heat_unused_steam_hot_water_in_collective_heat_network_mekko
+  - key: geothermal_heat
+    gquery: energy_heat_well_geothermal_in_collective_heat_network_mekko
+  - key: industrial_heat
+    gquery: energy_heat_industry_residual_heat_in_collective_heat_network_mekko

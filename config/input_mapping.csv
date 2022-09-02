@@ -1,13 +1,13 @@
 KR_input_key,KR_input_value,slider_0_name,slider_0_value,slider_1_name,slider_1_value,slider_2_name,slider_2_value,slider_3_name,slider_3_value
-0,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,9000,,,,,,#nog_aanpassen
-1,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,9000,,,,,,#nog_aanpassen
+0,1,max_demand_of_dry_biomass,282,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
+1,1,max_demand_of_biogenic_waste,282,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
 2,1,capacity_of_energy_hydrogen_steam_methane_reformer,13000,,,,,,
 3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,30000,,,,,,
 4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,9000,,,,,,
-5,0,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,0,,,,,,
-5,0.25,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,2250,,,,,,
-5,0.5,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,4500,,,,,,
-5,0.75,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,6750,,,,,,
+#5,0,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,0,,,,,,
+#5,0.25,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,2250,,,,,,
+#5,0.5,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,4500,,,,,,
+#5,0.75,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,6750,,,,,,
 5,1,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,9000,,,,,,
 6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,100,share_of_industry_chemicals_refineries_reused_residual_heat,100,share_of_industry_other_ict_reused_residual_heat,100
 7,1,capacity_of_energy_heat_well_geothermal,5000,,,,,,
