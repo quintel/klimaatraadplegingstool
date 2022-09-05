@@ -1,51 +1,31 @@
-KR_input_key,KR_input_value,slider_0_name,slider_0_value,slider_1_name,slider_1_value,slider_2_name,slider_2_value,slider_3_name,slider_3_value
-0,1,max_demand_of_dry_biomass,0,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-0,1,max_demand_of_dry_biomass,112,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-0,1,max_demand_of_dry_biomass,169,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-0,1,max_demand_of_dry_biomass,225,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
+KR_input_key,KR_input_value,slider_0_name,slider_0_value,slider_1_name,slider_1_value,slider_2_name,slider_2_value,slider_3_name,slider_3_value,
+#0,1,max_demand_of_dry_biomass,0,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
+#0,1,max_demand_of_dry_biomass,141,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
 0,1,max_demand_of_dry_biomass,282,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-1,1,max_demand_of_biogenic_waste,0,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-1,1,max_demand_of_biogenic_waste,112,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-1,1,max_demand_of_biogenic_waste,169,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-1,1,max_demand_of_biogenic_waste,225,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
+#1,1,max_demand_of_biogenic_waste,0,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
+#1,1,max_demand_of_biogenic_waste,141,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
 1,1,max_demand_of_biogenic_waste,282,,,,,,#Potentie wordt hier gezet als workaround, in stap demand_installer wordt er vraag neergezet om deze potentie te bereiken.
-2,1,capacity_of_energy_hydrogen_steam_methane_reformer,0,,,,,,
-2,1,capacity_of_energy_hydrogen_steam_methane_reformer,3250,,,,,,
-2,1,capacity_of_energy_hydrogen_steam_methane_reformer,6500,,,,,,
-2,1,capacity_of_energy_hydrogen_steam_methane_reformer,9750,,,,,,
-2,1,capacity_of_energy_hydrogen_steam_methane_reformer,13000,,,,,,
-3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,0,,,,,,
-3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,7500,,,,,,
-3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,15000,,,,,,
-3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,22500,,,,,,
-3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,30000,,,,,,
-4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,0,,,,,,
-4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,2250,,,,,,
-4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,4500,,,,,,
-4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,6750,,,,,,
-4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,9000,,,,,,
-#5,0,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,0,,,,,,
-#5,0.25,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,2250,,,,,,
-#5,0.5,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,4500,,,,,,
-#5,0.75,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,6750,,,,,,
-5,1,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,9000,,,,,,
-6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,0,share_of_industry_chemicals_refineries_reused_residual_heat,0,share_of_industry_other_ict_reused_residual_heat,0
-6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,25,share_of_industry_chemicals_refineries_reused_residual_heat,25,share_of_industry_other_ict_reused_residual_heat,25
-6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,50,share_of_industry_chemicals_refineries_reused_residual_heat,50,share_of_industry_other_ict_reused_residual_heat,50
-6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,75,share_of_industry_chemicals_refineries_reused_residual_heat,75,share_of_industry_other_ict_reused_residual_heat,75
-6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,100,share_of_industry_chemicals_refineries_reused_residual_heat,100,share_of_industry_other_ict_reused_residual_heat,100
-7,1,capacity_of_energy_heat_well_geothermal,0,,,,,,
-7,1,capacity_of_energy_heat_well_geothermal,1250,,,,,,
-7,1,capacity_of_energy_heat_well_geothermal,2500,,,,,,
-7,1,capacity_of_energy_heat_well_geothermal,3750,,,,,,
-7,1,capacity_of_energy_heat_well_geothermal,5000,,,,,,
-8,1,capacity_of_energy_power_wind_turbine_inland,0,capacity_of_energy_power_solar_pv_solar_radiation,0,,,,
-8,1,capacity_of_energy_power_wind_turbine_inland,5000,capacity_of_energy_power_solar_pv_solar_radiation,5000,,,,
-8,1,capacity_of_energy_power_wind_turbine_inland,10000,capacity_of_energy_power_solar_pv_solar_radiation,10000,,,,
-8,1,capacity_of_energy_power_wind_turbine_inland,15000,capacity_of_energy_power_solar_pv_solar_radiation,15000,,,,
-8,1,capacity_of_energy_power_wind_turbine_inland,20000,capacity_of_energy_power_solar_pv_solar_radiation,20000,,,,
-9,1,capacity_of_energy_imported_hydrogen_baseload,0,,,,,,
-9,1,capacity_of_energy_imported_hydrogen_baseload,7500,,,,,,
-9,1,capacity_of_energy_imported_hydrogen_baseload,12500,,,,,,
-9,1,capacity_of_energy_imported_hydrogen_baseload,18750,,,,,,
-9,1,capacity_of_energy_imported_hydrogen_baseload,25000,,,,,,
+#2,1,capacity_of_energy_hydrogen_steam_methane_reformer,0,,,,,,,
+#2,1,capacity_of_energy_hydrogen_steam_methane_reformer,6500,,,,,,,
+2,1,capacity_of_energy_hydrogen_steam_methane_reformer,13000,,,,,,,
+#3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,0,,,,,,,
+#3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,15000,,,,,,,
+3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,30000,,,,,,,
+#4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,0,,,,,,,
+#4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,4500,,,,,,,
+4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,9000,,,,,,,
+#5,0,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,0,,,,,,,
+#5,0.5,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,4500,,,,,,,
+5,1,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,9000,,,,,,,
+#6,0,share_of_industry_chemicals_other_reused_residual_heat,0,share_of_industry_chemicals_fertilizers_reused_residual_heat,0,share_of_industry_chemicals_refineries_reused_residual_heat,0,share_of_industry_other_ict_reused_residual_heat,0,
+#6,1,share_of_industry_chemicals_other_reused_residual_heat,50,share_of_industry_chemicals_fertilizers_reused_residual_heat,50,share_of_industry_chemicals_refineries_reused_residual_heat,50,share_of_industry_other_ict_reused_residual_heat,50,
+6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,100,share_of_industry_chemicals_refineries_reused_residual_heat,100,share_of_industry_other_ict_reused_residual_heat,100,
+#7,1,capacity_of_energy_heat_well_geothermal,0,,,,,,,
+#7,1,capacity_of_energy_heat_well_geothermal,2500,,,,,,,
+7,1,capacity_of_energy_heat_well_geothermal,5000,,,,,,,
+#8,1,capacity_of_energy_power_wind_turbine_inland,0,capacity_of_energy_power_solar_pv_solar_radiation,0,,,,,
+#8,1,capacity_of_energy_power_wind_turbine_inland,10000,capacity_of_energy_power_solar_pv_solar_radiation,10000,,,,,
+8,1,capacity_of_energy_power_wind_turbine_inland,20000,capacity_of_energy_power_solar_pv_solar_radiation,20000,,,,,
+#9,1,capacity_of_energy_imported_hydrogen_baseload,0,,,,,,,
+#9,1,capacity_of_energy_imported_hydrogen_baseload,12500,,,,,,,
+9,1,capacity_of_energy_imported_hydrogen_baseload,25000,,,,,,,
