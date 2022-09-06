@@ -118,7 +118,6 @@ class DemandInstaller():
             self.sliders["industry_chemicals_fertilizers_hydrogen_network_share"] = 100
             self.sliders["industry_chemicals_fertilizers_steam_methane_reformer_hydrogen_share"] = 0
             self.sliders["industry_final_demand_for_chemical_fertilizers_steam_hot_water_share"] = 0
-            self.sliders["industry_useful_demand_for_chemical_fertilizers"] = 0
 
         if self.supply.hydrogen_export > 75:
             self.sliders["industry_steel_blastfurnace_bof_share"] = 0
