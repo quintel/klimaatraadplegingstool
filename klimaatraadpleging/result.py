@@ -7,6 +7,8 @@ class Result():
         self.etm_session = etm_session
 
     def calculate(self):
+        counter = 0
+
         for setting in self.combiner.generate_settings():
             # We have three iterations of requests to ETE:
             # 1. create scenario
@@ -16,6 +18,9 @@ class Result():
                 self.etm_session.calculate(setting, iteration=i)
 
             self.result.append(setting.as_json())
+
+            counter += 1
+            if counter % 1000 == 0: print(counter)
 
     def write_to(self, path):
         f = open(path, "w")

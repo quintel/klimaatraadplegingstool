@@ -13,9 +13,385 @@ kpis:
     gquery: dashboard_energy_import_netto
   - key: costs
     gquery: dashboard_total_costs
-  - key: unused_heat
-    gquery: energy_heat_unused_steam_hot_water_in_collective_heat_network_mekko
-  - key: geothermal_heat
-    gquery: energy_heat_well_geothermal_in_collective_heat_network_mekko
-  - key: industrial_heat
-    gquery: energy_heat_industry_residual_heat_in_collective_heat_network_mekko
+  - key: security_of_supply
+    gquery: dashboard_security_of_supply
+  - key: dashboard_biomass_final_demand
+    gquery: dashboard_biomass_final_demand
+  - key: dashboard_biomass_import_share
+    gquery: dashboard_biomass_import_share
+  - key: dashboard_biomass_primary_demand
+    gquery: dashboard_biomass_primary_demand
+  - key: dashboard_blackout_hours
+    gquery: dashboard_blackout_hours
+  - key: dashboard_co2_emissions_versus_start_year
+    gquery: dashboard_co2_emissions_versus_start_year
+  - key: dashboard_emissions
+    gquery: dashboard_emissions
+  - key: dashboard_energy_demand_primary_of_final_plus_export_losses
+    gquery: dashboard_energy_demand_primary_of_final_plus_export_losses
+  - key: dashboard_energy_demand_primary_of_final
+    gquery: dashboard_energy_demand_primary_of_final
+  - key: dashboard_profitability
+    gquery: dashboard_profitability
+  - key: dashboard_reduction_of_local_co2_emissions_versus_1990
+    gquery: dashboard_reduction_of_local_co2_emissions_versus_1990
+  - key: dashboard_renewability_households
+    gquery: dashboard_renewability_households
+  - key: dashboard_renewability
+    gquery: dashboard_renewability
+  - key: dashboard_share_of_renewable_electricity
+    gquery: dashboard_share_of_renewable_electricity
+  - key: dashboard_total_costs_per_household
+    gquery: dashboard_total_costs_per_household
+  - key: dashboard_total_number_of_excess_events
+    gquery: dashboard_total_number_of_excess_events
+  - key: costs_building_and_installations
+    gquery: costs_building_and_installations
+  - key: costs_carriers
+    gquery: costs_carriers
+  - key: costs_production
+    gquery: costs_production
+  - key: costs_storage_and_conversion
+    gquery: costs_storage_and_conversion
+  - key: costs_infrastructure
+    gquery: costs_infrastructure
+  - key: costs_co2
+    gquery: costs_co2
+  - key: costs_building_and_installations_households
+    gquery: costs_building_and_installations_households
+  - key: costs_building_and_installations_buildings
+    gquery: costs_building_and_installations_buildings
+  - key: costs_building_and_installations_agriculture
+    gquery: costs_building_and_installations_agriculture
+  - key: costs_building_and_installations_transport
+    gquery: costs_building_and_installations_transport
+  - key: costs_building_and_installations_industry
+    gquery: costs_building_and_installations_industry
+  - key: costs_carriers_biomass
+    gquery: costs_carriers_biomass
+  - key: costs_carriers_coal_and_products
+    gquery: costs_carriers_coal_and_products
+  - key: costs_carriers_electricity
+    gquery: costs_carriers_electricity
+  - key: costs_carriers_heat
+    gquery: costs_carriers_heat
+  - key: costs_carriers_hydrogen
+    gquery: costs_carriers_hydrogen
+  - key: costs_carriers_natural_gas
+    gquery: costs_carriers_natural_gas
+  - key: costs_carriers_oil_and_products
+    gquery: costs_carriers_oil_and_products
+  - key: costs_carriers_uranium
+    gquery: costs_carriers_uranium
+  - key: costs_carriers_waste
+    gquery: costs_carriers_waste
+  - key: costs_production_biomass
+    gquery: costs_production_biomass
+  - key: costs_production_chp_plants
+    gquery: costs_production_chp_plants
+  - key: costs_production_dedicated_hydrogen_production
+    gquery: costs_production_dedicated_hydrogen_production
+  - key: costs_production_heat_plants
+    gquery: costs_production_heat_plants
+  - key: costs_production_other
+    gquery: costs_production_other
+  - key: costs_production_power_plants
+    gquery: costs_production_power_plants
+  - key: costs_storage_and_conversion_p2p
+    gquery: costs_storage_and_conversion_p2p
+  - key: costs_storage_and_conversion_p2g
+    gquery: costs_storage_and_conversion_p2g
+  - key: costs_storage_and_conversion_p2h
+    gquery: costs_storage_and_conversion_p2h
+  - key: costs_storage_and_conversion_storage
+    gquery: costs_storage_and_conversion_storage
+  - key: costs_infrastructure_electricity
+    gquery: costs_infrastructure_electricity
+  - key: costs_infrastructure_heat
+    gquery: costs_infrastructure_heat
+  - key: costs_infrastructure_hydrogen
+    gquery: costs_infrastructure_hydrogen
+  - key: costs_infrastructure_network_gas
+    gquery: costs_infrastructure_network_gas
+  - key: costs_co2
+    gquery: costs_co2
+  - key: final_demand_from_industry_energetic
+    gquery: final_demand_from_industry_energetic
+  - key: final_demand_from_transport_energetic
+    gquery: final_demand_from_transport_energetic
+  - key: final_demand_from_households_energetic
+    gquery: final_demand_from_households_energetic
+  - key: final_demand_from_buildings_energetic
+    gquery: final_demand_from_buildings_energetic
+  - key: final_demand_from_agriculture_energetic
+    gquery: final_demand_from_agriculture_energetic
+  - key: final_demand_from_other_sector_energetic
+    gquery: final_demand_from_other_sector_energetic
+  - key: final_demand_from_energy_sector_energetic
+    gquery: final_demand_from_energy_sector_energetic
+  - key: primary_co2_of_industry
+    gquery: primary_co2_of_industry
+  - key: primary_co2_of_transport
+    gquery: primary_co2_of_transport
+  - key: primary_co2_of_households
+    gquery: primary_co2_of_households
+  - key: primary_co2_of_buildings
+    gquery: primary_co2_of_buildings
+  - key: primary_co2_of_agriculture
+    gquery: primary_co2_of_agriculture
+  - key: primary_co2_of_other
+    gquery: primary_co2_of_other
+  - key: primary_co2_of_energy
+    gquery: primary_co2_of_energy
+  - key: primary_co2_of_non_energetic_and_delayed_emissions
+    gquery: primary_co2_of_non_energetic_and_delayed_emissions
+  - key: 1990_in_co2_emissions
+    gquery: 1990_in_co2_emissions
+  - key: present_total_net_co2_emissions
+    gquery: present_total_net_co2_emissions
+  - key: future_total_net_co2_emissions
+    gquery: future_total_net_co2_emissions
+  - key: uranium_in_future_energy_imports
+    gquery: uranium_in_future_energy_imports
+  - key: gas_in_future_energy_imports
+    gquery: gas_in_future_energy_imports
+  - key: coal_in_future_energy_imports
+    gquery: coal_in_future_energy_imports
+  - key: electricity_in_future_energy_imports
+    gquery: electricity_in_future_energy_imports
+  - key: biomass_in_future_energy_imports
+    gquery: biomass_in_future_energy_imports
+  - key: hydrogen_in_future_energy_imports
+    gquery: hydrogen_in_future_energy_imports
+  - key: lng_in_future_energy_imports
+    gquery: lng_in_future_energy_imports
+  - key: oil_products_in_future_energy_imports
+    gquery: oil_products_in_future_energy_imports
+  - key: oil_in_future_energy_imports
+    gquery: oil_in_future_energy_imports
+  - key: imported_heat_value_in_future_energy_imports
+    gquery: imported_heat_value_in_future_energy_imports
+  - key: agriculture_final_demand_hydrogen_for_mekko
+    gquery: agriculture_final_demand_hydrogen_for_mekko
+  - key: industry_final_demand_hydrogen_for_mekko
+    gquery: industry_final_demand_hydrogen_for_mekko
+  - key: industry_final_demand_for_chemical_fertilizers_hydrogen_non_energetic_for_mekko
+    gquery: industry_final_demand_for_chemical_fertilizers_hydrogen_non_energetic_for_mekko
+  - key: energy_power_plants_hydrogen_for_mekko
+    gquery: energy_power_plants_hydrogen_for_mekko
+  - key: energy_import_hydrogen_for_mekko
+    gquery: energy_import_hydrogen_for_mekko
+  - key: energy_hydrogen_steam_methane_reformer_for_mekko
+    gquery: energy_hydrogen_steam_methane_reformer_for_mekko
+  - key: energy_hydrogen_steam_methane_reformer_ccs_for_mekko
+    gquery: energy_hydrogen_steam_methane_reformer_ccs_for_mekko
+  - key: energy_hydrogen_flexibility_p2g_electricity_for_mekko
+    gquery: energy_hydrogen_flexibility_p2g_electricity_for_mekko
+  - key: energy_hydrogen_electrolysis_solar_electricity_for_mekko
+    gquery: energy_hydrogen_electrolysis_solar_electricity_for_mekko
+  - key: energy_hydrogen_electrolysis_wind_electricity_for_mekko
+    gquery: energy_hydrogen_electrolysis_wind_electricity_for_mekko
+  - key: energy_hydrogen_biomass_gasification_ccs_for_mekko
+    gquery: energy_hydrogen_biomass_gasification_ccs_for_mekko
+  - key: energy_hydrogen_biomass_gasification_for_mekko
+    gquery: energy_hydrogen_biomass_gasification_for_mekko
+  - key: energy_export_hydrogen_for_mekko
+    gquery: energy_export_hydrogen_for_mekko
+  - key: losses_hydrogen_energetic_for_mekko
+    gquery: losses_hydrogen_energetic_for_mekko
+  - key: transport_final_demand_hydrogen_for_mekko
+    gquery: transport_final_demand_hydrogen_for_mekko
+  - key: households_inidividual_heater_hydrogen_for_mekko
+    gquery: households_inidividual_heater_hydrogen_for_mekko
+  - key: buildings_inidividual_heater_hydrogen_for_mekko
+    gquery: buildings_inidividual_heater_hydrogen_for_mekko
+  - key: industry_final_demand_for_chemical_other_hydrogen_non_energetic_for_mekko
+    gquery: industry_final_demand_for_chemical_other_hydrogen_non_energetic_for_mekko
+  - key: energy_heat_from_hydrogen_for_mekko
+    gquery: energy_heat_from_hydrogen_for_mekko
+  - key: energy_synthetic_products_from_hydrogen_for_mekko
+    gquery: energy_synthetic_products_from_hydrogen_for_mekko
+  - key: industry_residual_hydrogen_for_mekko
+    gquery: industry_residual_hydrogen_for_mekko
+  - key: coal_in_source_of_electricity_production
+    gquery: coal_in_source_of_electricity_production
+  - key: gas_in_source_of_electricity_production
+    gquery: gas_in_source_of_electricity_production
+  - key: oil_in_source_of_electricity_production
+    gquery: oil_in_source_of_electricity_production
+  - key: nuclear_in_source_of_electricity_production
+    gquery: nuclear_in_source_of_electricity_production
+  - key: biomass_in_source_of_electricity_production
+    gquery: biomass_in_source_of_electricity_production
+  - key: wind_in_source_of_electricity_production
+    gquery: wind_in_source_of_electricity_production
+  - key: hydro_in_source_of_electricity_production
+    gquery: hydro_in_source_of_electricity_production
+  - key: greengas_in_source_of_electricity_production
+    gquery: greengas_in_source_of_electricity_production
+  - key: geothermal_in_source_of_electricity_production
+    gquery: geothermal_in_source_of_electricity_production
+  - key: waste_in_source_of_electricity_production
+    gquery: waste_in_source_of_electricity_production
+  - key: solar_in_source_of_electricity_production
+    gquery: solar_in_source_of_electricity_production
+  - key: future_demand_and_export_in_source_of_electricity_production
+    gquery: future_demand_and_export_in_source_of_electricity_production
+  - key: present_demand_in_source_of_electricity_production
+    gquery: present_demand_in_source_of_electricity_production
+  - key: future_demand_in_source_of_electricity_production
+    gquery: future_demand_in_source_of_electricity_production
+  - key: import_in_source_of_electricity_production
+    gquery: import_in_source_of_electricity_production
+  - key: biogas_in_source_of_electricity_production
+    gquery: biogas_in_source_of_electricity_production
+  - key: hydrogen_in_source_of_electricity_production
+    gquery: hydrogen_in_source_of_electricity_production
+  - key: coal_gas_in_source_of_electricity_production
+    gquery: coal_gas_in_source_of_electricity_production
+  - key: merit_order_nuclear_iii_capacity_in_merit_order_table
+    gquery: merit_order_nuclear_iii_capacity_in_merit_order_table
+  - key: merit_order_nuclear_ii_capacity_in_merit_order_table
+    gquery: merit_order_nuclear_ii_capacity_in_merit_order_table
+  - key: merit_order_nuclear_smr_capacity_in_merit_order_table
+    gquery: merit_order_nuclear_smr_capacity_in_merit_order_table
+  - key: merit_order_buildings_solar_pv_solar_radiation_capacity_in_merit_order_table
+    gquery: merit_order_buildings_solar_pv_solar_radiation_capacity_in_merit_order_table
+  - key: merit_order_households_solar_pv_solar_radiation_capacity_in_merit_order_table
+    gquery: merit_order_households_solar_pv_solar_radiation_capacity_in_merit_order_table
+  - key: merit_order_energy_power_solar_pv_solar_radiation_capacity_in_merit_order_table
+    gquery: merit_order_energy_power_solar_pv_solar_radiation_capacity_in_merit_order_table
+  - key: merit_order_energy_power_solar_pv_offshore_capacity_in_merit_order_table
+    gquery: merit_order_energy_power_solar_pv_offshore_capacity_in_merit_order_table
+  - key: merit_order_energy_interconnector_1_imported_electricity_capacity_in_merit_order_table
+    gquery: merit_order_energy_interconnector_1_imported_electricity_capacity_in_merit_order_table
+  - key: merit_order_offshore_wind_turbines_capacity_in_merit_order_table
+    gquery: merit_order_offshore_wind_turbines_capacity_in_merit_order_table
+  - key: merit_order_onshore_wind_turbines_capacity_in_merit_order_table
+    gquery: merit_order_onshore_wind_turbines_capacity_in_merit_order_table
+  - key: final_demand_of_biomass_products_in_industry_energetic
+    gquery: final_demand_of_biomass_products_in_industry_energetic
+  - key: final_demand_of_biomass_products_in_households_energetic
+    gquery: final_demand_of_biomass_products_in_households_energetic
+  - key: final_demand_of_biomass_products_in_buildings_energetic
+    gquery: final_demand_of_biomass_products_in_buildings_energetic
+  - key: final_demand_of_biomass_products_in_transport_energetic
+    gquery: final_demand_of_biomass_products_in_transport_energetic
+  - key: final_demand_of_biomass_products_in_other_energetic
+    gquery: final_demand_of_biomass_products_in_other_energetic
+  - key: final_demand_of_biomass_products_in_agriculture_energetic
+    gquery: final_demand_of_biomass_products_in_agriculture_energetic
+  - key: final_demand_of_coal_and_derivatives_in_industry_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_industry_energetic
+  - key: final_demand_of_coal_and_derivatives_in_households_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_households_energetic
+  - key: final_demand_of_coal_and_derivatives_in_transport_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_transport_energetic
+  - key: final_demand_of_coal_and_derivatives_in_agriculture_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_agriculture_energetic
+  - key: final_demand_of_coal_and_derivatives_in_other_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_other_energetic
+  - key: final_demand_of_coal_and_derivatives_in_buildings_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_buildings_energetic
+  - key: final_demand_of_electricity_in_buildings_energetic
+    gquery: final_demand_of_electricity_in_buildings_energetic
+  - key: final_demand_of_electricity_in_other_energetic
+    gquery: final_demand_of_electricity_in_other_energetic
+  - key: final_demand_of_electricity_in_agriculture_energetic
+    gquery: final_demand_of_electricity_in_agriculture_energetic
+  - key: final_demand_of_electricity_in_households_energetic
+    gquery: final_demand_of_electricity_in_households_energetic
+  - key: final_demand_of_electricity_in_industry_energetic
+    gquery: final_demand_of_electricity_in_industry_energetic
+  - key: final_demand_of_electricity_in_transport_energetic
+    gquery: final_demand_of_electricity_in_transport_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_industry_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_industry_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_households_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_households_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_transport_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_transport_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_agriculture_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_agriculture_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_other_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_other_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_buildings_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_buildings_energetic
+  - key: final_demand_of_heat_in_other_energetic
+    gquery: final_demand_of_heat_in_other_energetic
+  - key: final_demand_of_heat_in_agriculture_energetic
+    gquery: final_demand_of_heat_in_agriculture_energetic
+  - key: final_demand_of_heat_in_households_energetic
+    gquery: final_demand_of_heat_in_households_energetic
+  - key: final_demand_of_heat_in_industry_energetic
+    gquery: final_demand_of_heat_in_industry_energetic
+  - key: final_demand_of_heat_in_transport_energetic
+    gquery: final_demand_of_heat_in_transport_energetic
+  - key: final_demand_of_heat_in_buildings_energetic
+    gquery: final_demand_of_heat_in_buildings_energetic
+  - key: final_demand_of_oil_and_derivatives_in_industry_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_industry_energetic
+  - key: final_demand_of_oil_and_derivatives_in_households_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_households_energetic
+  - key: final_demand_of_oil_and_derivatives_in_transport_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_transport_energetic
+  - key: final_demand_of_oil_and_derivatives_in_agriculture_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_agriculture_energetic
+  - key: final_demand_of_oil_and_derivatives_in_other_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_other_energetic
+  - key: final_demand_of_oil_and_derivatives_in_buildings_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_buildings_energetic
+  - key: final_demand_of_solar_in_industry_energetic
+    gquery: final_demand_of_solar_in_industry_energetic
+  - key: final_demand_of_solar_in_households_energetic
+    gquery: final_demand_of_solar_in_households_energetic
+  - key: final_demand_of_solar_in_transport_energetic
+    gquery: final_demand_of_solar_in_transport_energetic
+  - key: final_demand_of_solar_in_agriculture_energetic
+    gquery: final_demand_of_solar_in_agriculture_energetic
+  - key: final_demand_of_solar_in_other_energetic
+    gquery: final_demand_of_solar_in_other_energetic
+  - key: final_demand_of_solar_in_buildings_energetic
+    gquery: final_demand_of_solar_in_buildings_energetic
+  - key: final_demand_of_geothermal_in_industry_energetic
+    gquery: final_demand_of_geothermal_in_industry_energetic
+  - key: final_demand_of_geothermal_in_households_energetic
+    gquery: final_demand_of_geothermal_in_households_energetic
+  - key: final_demand_of_geothermal_in_transport_energetic
+    gquery: final_demand_of_geothermal_in_transport_energetic
+  - key: final_demand_of_geothermal_in_agriculture_energetic
+    gquery: final_demand_of_geothermal_in_agriculture_energetic
+  - key: final_demand_of_geothermal_in_other_energetic
+    gquery: final_demand_of_geothermal_in_other_energetic
+  - key: final_demand_of_geothermal_in_buildings_energetic
+    gquery: final_demand_of_geothermal_in_buildings_energetic
+  - key: final_demand_of_hydrogen_in_agriculture_energetic
+    gquery: final_demand_of_hydrogen_in_agriculture_energetic
+  - key: final_demand_of_hydrogen_in_buildings_energetic
+    gquery: final_demand_of_hydrogen_in_buildings_energetic
+  - key: final_demand_of_hydrogen_in_households_energetic
+    gquery: final_demand_of_hydrogen_in_households_energetic
+  - key: final_demand_of_hydrogen_in_industry_energetic
+    gquery: final_demand_of_hydrogen_in_industry_energetic
+  - key: final_demand_of_hydrogen_in_other_energetic
+    gquery: final_demand_of_hydrogen_in_other_energetic
+  - key: final_demand_of_hydrogen_in_transport_energetic
+    gquery: final_demand_of_hydrogen_in_transport_energetic
+  - key: final_demand_of_hydrogen_in_energy_energetic
+    gquery: final_demand_of_hydrogen_in_energy_energetic
+  - key: final_demand_of_solar_in_energy_energetic
+    gquery: final_demand_of_solar_in_energy_energetic
+  - key: final_demand_of_geothermal_in_energy_energetic
+    gquery: final_demand_of_geothermal_in_energy_energetic
+  - key: final_demand_of_biomass_products_in_energy_energetic
+    gquery: final_demand_of_biomass_products_in_energy_energetic
+  - key: final_demand_of_coal_and_derivatives_in_energy_energetic
+    gquery: final_demand_of_coal_and_derivatives_in_energy_energetic
+  - key: final_demand_of_electricity_in_energy_energetic
+    gquery: final_demand_of_electricity_in_energy_energetic
+  - key: final_demand_of_natural_gas_and_derivatives_in_energy_energetic
+    gquery: final_demand_of_natural_gas_and_derivatives_in_energy_energetic
+  - key: final_demand_of_heat_in_energy_energetic
+    gquery: final_demand_of_heat_in_energy_energetic
+  - key: final_demand_of_oil_and_derivatives_in_energy_energetic
+    gquery: final_demand_of_oil_and_derivatives_in_energy_energetic

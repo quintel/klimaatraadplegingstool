@@ -10,7 +10,8 @@ class DemandInstaller():
         'geothermal_heat': 'energy_heat_well_geothermal_in_collective_heat_network_mekko',
         'industrial_heat': 'energy_heat_industry_residual_heat_in_collective_heat_network_mekko',
         'desired_local_biomass_production': 'max_demand_dry_biomass',
-        'desired_biomass_production': 'max_demand_biogenic_waste',
+        'desired_biomass_production_import': 'max_demand_biogenic_waste',
+        'desired_biomass_production_extra_import': 'max_demand_oily_biomass',#work around for max biomass slider biogenic waste
     }
 
 
@@ -105,7 +106,7 @@ class DemandInstaller():
             self.sliders["industry_other_paper_heater_electricity_share"] = 100
             self.sliders["capacity_of_energy_hydrogen_flexibility_p2g_electricity"] = 20000
 
-        if self.supply.electricity_curtailed > 150:
+        if self.supply.electricity_curtailed > 200:
             self.sliders["capacity_of_energy_hydrogen_flexibility_p2g_electricity"] = 30000
 
         #hydrogen
@@ -118,7 +119,6 @@ class DemandInstaller():
             self.sliders["industry_chemicals_fertilizers_hydrogen_network_share"] = 100
             self.sliders["industry_chemicals_fertilizers_steam_methane_reformer_hydrogen_share"] = 0
             self.sliders["industry_final_demand_for_chemical_fertilizers_steam_hot_water_share"] = 0
-            self.sliders["industry_useful_demand_for_chemical_fertilizers"] = 0
 
         if self.supply.hydrogen_export > 75:
             self.sliders["industry_steel_blastfurnace_bof_share"] = 0
@@ -181,31 +181,31 @@ class DemandInstaller():
 
         #biomass
 
-        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production > 50:
+        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production_import + self.supply.desired_biomass_production_extra_import > 50:
             self.sliders["agriculture_burner_network_gas_share"] = 80
             self.sliders["agriculture_burner_wood_pellets_share"] = 20
             self.sliders["industry_aggregated_other_industry_network_gas_share"] = 80
             self.sliders["industry_aggregated_other_industry_wood_pellets_share"] = 20
 
-        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production > 100:
+        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production_import + self.supply.desired_biomass_production_extra_import > 100:
             self.sliders["agriculture_burner_network_gas_share"] -= 20
             self.sliders["agriculture_burner_wood_pellets_share"] += 20
             self.sliders["industry_aggregated_other_industry_network_gas_share"] -= 20
             self.sliders["industry_aggregated_other_industry_wood_pellets_share"] += 20
 
-        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production > 150:
+        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production_import + self.supply.desired_biomass_production_extra_import > 150:
             self.sliders["agriculture_burner_network_gas_share"] -= 20
             self.sliders["agriculture_burner_wood_pellets_share"] += 20
             self.sliders["industry_aggregated_other_industry_network_gas_share"] -= 20
             self.sliders["industry_aggregated_other_industry_wood_pellets_share"] += 20
 
-        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production > 200:
+        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production_import + self.supply.desired_biomass_production_extra_import > 200:
             self.sliders["agriculture_burner_network_gas_share"] -= 20
             self.sliders["agriculture_burner_wood_pellets_share"] += 20
             self.sliders["industry_aggregated_other_industry_network_gas_share"] -= 20
             self.sliders["industry_aggregated_other_industry_wood_pellets_share"] += 20
 
-        if self.supply.desired_local_biomass_production > 250:
+        if self.supply.desired_local_biomass_production + self.supply.desired_biomass_production_import + self.supply.desired_biomass_production_extra_import > 250:
             self.sliders["agriculture_burner_network_gas_share"] -= 20
             self.sliders["agriculture_burner_wood_pellets_share"] += 20
             self.sliders["industry_aggregated_other_industry_network_gas_share"] -= 20
