@@ -13,7 +13,7 @@ class ETMScenario(KPIS, InstallDemand):
     def as_json(self):
         '''Returns a dict that can be dumped by json'''
         return (
-            {'etm_scenario': self.name , 'scenario_id': self.id} | self.kpis
+            {'etm_scenario': self.name} | self.kpis
         )
 
     def update(self, user_values):
