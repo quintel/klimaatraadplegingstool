@@ -1,31 +1,51 @@
-KR_input_key,KR_input_value,slider_0_name,slider_0_value,slider_1_name,slider_1_value,slider_2_name,slider_2_value,slider_3_name,slider_3_value,
+﻿KR_input_key,KR_input_value,slider_0_name,slider_0_value,slider_1_name,slider_1_value,slider_2_name,slider_2_value,slider_3_name,slider_3_value,
 #0,0,max_demand_of_dry_biomass,0,,,,,,,# Geen inzet
+#0,0.25,max_demand_of_dry_biomass,90,,,,,,,
 #0,0.5,max_demand_of_dry_biomass,180,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#0,0.75,max_demand_of_dry_biomass,270,,,,,,,
 0,1,max_demand_of_dry_biomass,360,,,,,,,"# De potentieschuif van droge biomassa wordt gezet als work around. In het script Demand_installer wordt er vraag neergezet, totdat deze potentie benut is. Er is bewust gekozen om het niet als groengas in te zetten, vanwege de modelmatige complexiteit. "
 #1,0,max_demand_of_biogenic_waste,0,,,,,,,# Geen inzet
-#1,0.5,max_demand_of_biogenic_waste,292,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#1,0.25,max_demand_of_biogenic_waste,135,,,,,,,
+#1,0.5,max_demand_of_biogenic_waste,270,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#1,0.75,max_demand_of_biogenic_waste,405,,,,,,,
 1,1,max_demand_of_biogenic_waste,400,max_demand_of_oily_biomass,140,,,,,"# De potentieschuifjes van biogeen afval en oliehoudende biomassa is wordt gezet als work around. In het script Demand_installer wordt er vraag neergezet, totdat deze potentie benut is. Er is bewust gekozen om het niet als groengas in te zetten, vanwege de modelmatige complexiteit. "
 #2,0,capacity_of_energy_hydrogen_steam_methane_reformer,0,,,,,,,# Geen inzet
-#2,0.5,capacity_of_energy_hydrogen_steam_methane_reformer,6150,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#2,0.25,capacity_of_energy_hydrogen_steam_methane_reformer,90,,,,,,,
+#2,0.5,capacity_of_energy_hydrogen_steam_methane_reformer,180,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#2,0.75,capacity_of_energy_hydrogen_steam_methane_reformer,270,,,,,,,
 2,1,capacity_of_energy_hydrogen_steam_methane_reformer,12300,,,,,,,# In het ETM wordt er een 12.3 GW SMR met CCS neergezet om 270 PJ  waterstof te maken. In demand installer wordt er bij vodoende aanbod ook vraag neergezet.
 #3,0,capacity_of_energy_hydrogen_wind_turbine_offshore,0,,,,,,,# Geen inzet
+#3,0.25,capacity_of_energy_hydrogen_wind_turbine_offshore,7500,,,,,,,
 #3,0.5,capacity_of_energy_hydrogen_wind_turbine_offshore,15000,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#3,0.75,capacity_of_energy_hydrogen_wind_turbine_offshore,22500,,,,,,,
 3,1,capacity_of_energy_hydrogen_wind_turbine_offshore,30000,,,,,,,"# In het ETM wordt 0-30 GW dedicated wind offshore voor waterstof gezet. Voorstel van de coalitie is om richting 21.5 GW te gaan in 2030. Dit zit in het basisscenario. Het hoogste II3050 scenario heeft in totaal 51.5 GW aan windturbines in 2050.  Windturbines die puur voor H2 gaan draaien komen nog boven op de windturbines voor elektriciteit, die bandbreedte is dan ca. 0-30 GW"
 #4,0,capacity_of_energy_power_nuclear_gen3_uranium_oxide,0,,,,,,,# Geen inzet
+#4,0.25,capacity_of_energy_power_nuclear_gen3_uranium_oxide,2500,,,,,,,
 #4,0.5,capacity_of_energy_power_nuclear_gen3_uranium_oxide,5000,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#4,0.75,capacity_of_energy_power_nuclear_gen3_uranium_oxide,7500,,,,,,,
 4,1,capacity_of_energy_power_nuclear_gen3_uranium_oxide,10000,,,,,,,# In het ETM wordt 10 GW aan grote kerncentrales neergezet. Dit is gelijk aan ca. 6 grote kerncentrales. Huidige inzet van het kabinet is 2 grote kerncentrales (=3 GW). Maximaal is dus drie keer de huidige inzet van het kabinet. Dit is nog inclusief Borsele exclusief kleine modulaire kerncentrales. Getallen zijn afgerond naar 10 GW.  
 #5,0,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,0,,,,,,,# Geen inzet
+#5,0.25,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,1250,,,,,,,
 #5,0.5,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,2500,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#5,0.75,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,3750,,,,,,,
 5,1,capacity_of_energy_power_nuclear_small_modular_reactor_uranium_oxide,5000,,,,,,,"# Kleine kerncentrales moeten zich nog verder ontwikkelen, vanwege de onzekerheid is de helft van conventionele kern nu aangenomen vanwege onzekerheden. Dit is 5 GW en ca 33 TWh. Getallen zijn afgerond. "
 #6,0,share_of_industry_chemicals_other_reused_residual_heat,0,share_of_industry_chemicals_fertilizers_reused_residual_heat,0,share_of_industry_chemicals_refineries_reused_residual_heat,0,share_of_industry_other_ict_reused_residual_heat,0,# Geen inzet
+#6,0.25,share_of_industry_chemicals_other_reused_residual_heat,25,share_of_industry_chemicals_fertilizers_reused_residual_heat,25,share_of_industry_chemicals_refineries_reused_residual_heat,25,share_of_industry_other_ict_reused_residual_heat,25,
 #6,0.5,share_of_industry_chemicals_other_reused_residual_heat,50,share_of_industry_chemicals_fertilizers_reused_residual_heat,50,share_of_industry_chemicals_refineries_reused_residual_heat,50,share_of_industry_other_ict_reused_residual_heat,50,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#6,0.75,share_of_industry_chemicals_other_reused_residual_heat,75,share_of_industry_chemicals_fertilizers_reused_residual_heat,75,share_of_industry_chemicals_refineries_reused_residual_heat,75,share_of_industry_other_ict_reused_residual_heat,75,
 6,1,share_of_industry_chemicals_other_reused_residual_heat,100,share_of_industry_chemicals_fertilizers_reused_residual_heat,100,share_of_industry_chemicals_refineries_reused_residual_heat,100,share_of_industry_other_ict_reused_residual_heat,100,# Restwarmte industrie wordt maximaal ingezet
 #7,0,capacity_of_energy_heat_well_geothermal,0,,,,,,,# Geen inzet
+#7,0.25,capacity_of_energy_heat_well_geothermal,1250,,,,,,,
 #7,0.5,capacity_of_energy_heat_well_geothermal,2500,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#7,0.75,capacity_of_energy_heat_well_geothermal,3750,,,,,,,
 7,1,capacity_of_energy_heat_well_geothermal,5000,,,,,,,"# II3050 scenario Regionaal gekozen voor max geothermie, dat is de hoogste."
 #8,0,capacity_of_energy_power_wind_turbine_inland,7528,capacity_of_energy_power_solar_pv_solar_radiation,7046,,,,,# Geen inzet
+#8,0.25,capacity_of_energy_power_wind_turbine_inland,11278,capacity_of_energy_power_solar_pv_solar_radiation,10546,,,,,
 #8,0.5,capacity_of_energy_power_wind_turbine_inland,15028,capacity_of_energy_power_solar_pv_solar_radiation,14046,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#8,0.75,capacity_of_energy_power_wind_turbine_inland,18778,capacity_of_energy_power_solar_pv_solar_radiation,17546,,,,,
 8,1,capacity_of_energy_power_wind_turbine_inland,22528,capacity_of_energy_power_solar_pv_solar_radiation,21046,,,,,# Minimaal gaat uit van de Regionale Energie strategieën (RES’en). Die moeten optellen tot 35 TWh in 2030. Per stap worden er bijna net zoveel windturbines en zonneveld bijgezet als er nu zijn + in de pijplijn zitten. Dat betekent 1500 windturbines (5 MW/stuk) en 70 km2 zonneveld (1 MW / hectare). Maximaal is dus 4500 windturbines op land en 210 km2 zonneveld. Getallen zijn afgerond. 
 #9,0,capacity_of_energy_imported_hydrogen_baseload,0,,,,,,,# Geen inzet
+#9,0.25,capacity_of_energy_imported_hydrogen_baseload,2875,,,,,,,
 #9,0.5,capacity_of_energy_imported_hydrogen_baseload,5750,,,,,,,"# De helft van maximaal, zie maximaal voor meer toelichting"
+#9,0.75,capacity_of_energy_imported_hydrogen_baseload,8625,,,,,,,
 9,1,capacity_of_energy_imported_hydrogen_baseload,11500,,,,,,,# Mailwisseling met Michiel Den Haan die gaat uit van max 160 TWh waterstofimport exclusief bunkers en doorvoer. Dit is 18262 MW import.
